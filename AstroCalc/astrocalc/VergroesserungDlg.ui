@@ -1,0 +1,330 @@
+<!DOCTYPE UI><UI>
+<class>VergroesserungDlg</class>
+<widget>
+    <class>QDialog</class>
+    <property stdset="1">
+        <name>name</name>
+        <cstring>VergroesserungDlg</cstring>
+    </property>
+    <property stdset="1">
+        <name>geometry</name>
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>260</width>
+            <height>310</height>
+        </rect>
+    </property>
+    <property stdset="1">
+        <name>sizePolicy</name>
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+        </sizepolicy>
+    </property>
+    <property stdset="1">
+        <name>minimumSize</name>
+        <size>
+            <width>260</width>
+            <height>310</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>maximumSize</name>
+        <size>
+            <width>260</width>
+            <height>310</height>
+        </size>
+    </property>
+    <property stdset="1">
+        <name>caption</name>
+        <string>Vergrößerung</string>
+        <comment>Vergrößerung anhand des Okulars</comment>
+    </property>
+    <widget>
+        <class>QGroupBox</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>GBvergroesserung</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>10</x>
+                <y>240</y>
+                <width>241</width>
+                <height>60</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>frameShape</name>
+            <enum>Box</enum>
+        </property>
+        <property stdset="1">
+            <name>frameShadow</name>
+            <enum>Sunken</enum>
+        </property>
+        <property stdset="1">
+            <name>title</name>
+            <string>Erzielte Vergrößerung</string>
+        </property>
+        <widget>
+            <class>QLabel</class>
+            <property stdset="1">
+                <name>name</name>
+                <cstring>TLvergroesserung</cstring>
+            </property>
+            <property stdset="1">
+                <name>geometry</name>
+                <rect>
+                    <x>10</x>
+                    <y>20</y>
+                    <width>221</width>
+                    <height>31</height>
+                </rect>
+            </property>
+        </widget>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>PBok</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>20</x>
+                <y>190</y>
+                <width>91</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>OK</string>
+        </property>
+        <property stdset="1">
+            <name>default</name>
+            <bool>true</bool>
+        </property>
+    </widget>
+    <widget>
+        <class>QPushButton</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>PBcancel</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>150</x>
+                <y>190</y>
+                <width>90</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Abbrechen</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QGroupBox</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>GBbarlow</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>10</x>
+                <y>60</y>
+                <width>240</width>
+                <height>111</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>title</name>
+            <string>Barlow-Linse</string>
+        </property>
+        <widget>
+            <class>QButtonGroup</class>
+            <property stdset="1">
+                <name>name</name>
+                <cstring>BGbarlow</cstring>
+            </property>
+            <property stdset="1">
+                <name>enabled</name>
+                <bool>false</bool>
+            </property>
+            <property stdset="1">
+                <name>geometry</name>
+                <rect>
+                    <x>110</x>
+                    <y>20</y>
+                    <width>110</width>
+                    <height>81</height>
+                </rect>
+            </property>
+            <property stdset="1">
+                <name>title</name>
+                <string></string>
+            </property>
+            <widget>
+                <class>QRadioButton</class>
+                <property stdset="1">
+                    <name>name</name>
+                    <cstring>RBbarlow2x</cstring>
+                </property>
+                <property stdset="1">
+                    <name>geometry</name>
+                    <rect>
+                        <x>20</x>
+                        <y>10</y>
+                        <width>40</width>
+                        <height>20</height>
+                    </rect>
+                </property>
+                <property stdset="1">
+                    <name>text</name>
+                    <string>2x</string>
+                </property>
+            </widget>
+            <widget>
+                <class>QRadioButton</class>
+                <property stdset="1">
+                    <name>name</name>
+                    <cstring>RBbarlow3x</cstring>
+                </property>
+                <property stdset="1">
+                    <name>geometry</name>
+                    <rect>
+                        <x>20</x>
+                        <y>30</y>
+                        <width>40</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property stdset="1">
+                    <name>text</name>
+                    <string>3x</string>
+                </property>
+            </widget>
+            <widget>
+                <class>QRadioButton</class>
+                <property stdset="1">
+                    <name>name</name>
+                    <cstring>RBbarlow4x</cstring>
+                </property>
+                <property stdset="1">
+                    <name>geometry</name>
+                    <rect>
+                        <x>20</x>
+                        <y>50</y>
+                        <width>40</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property stdset="1">
+                    <name>text</name>
+                    <string>4x</string>
+                </property>
+            </widget>
+        </widget>
+        <widget>
+            <class>QCheckBox</class>
+            <property stdset="1">
+                <name>name</name>
+                <cstring>CBbarlow</cstring>
+            </property>
+            <property stdset="1">
+                <name>geometry</name>
+                <rect>
+                    <x>10</x>
+                    <y>30</y>
+                    <width>81</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property stdset="1">
+                <name>text</name>
+                <string>vorhanden</string>
+            </property>
+        </widget>
+    </widget>
+    <widget>
+        <class>QLabel</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>TLokular</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>163</width>
+                <height>20</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>text</name>
+            <string>Brennweite des Okulars (mm)</string>
+        </property>
+    </widget>
+    <widget>
+        <class>QLineEdit</class>
+        <property stdset="1">
+            <name>name</name>
+            <cstring>LEokular</cstring>
+        </property>
+        <property stdset="1">
+            <name>geometry</name>
+            <rect>
+                <x>190</x>
+                <y>20</y>
+                <width>50</width>
+                <height>22</height>
+            </rect>
+        </property>
+        <property stdset="1">
+            <name>alignment</name>
+            <set>AlignRight</set>
+        </property>
+        <property>
+            <name>hAlign</name>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>PBcancel</sender>
+        <signal>clicked()</signal>
+        <receiver>VergroesserungDlg</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>PBok</sender>
+        <signal>clicked()</signal>
+        <receiver>VergroesserungDlg</receiver>
+        <slot>slotVergroesserung()</slot>
+    </connection>
+    <connection>
+        <sender>CBbarlow</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>BGbarlow</receiver>
+        <slot>setEnabled(bool)</slot>
+    </connection>
+    <slot access="public">slotVergroesserung()</slot>
+</connections>
+<tabstops>
+    <tabstop>LEokular</tabstop>
+    <tabstop>CBbarlow</tabstop>
+    <tabstop>RBbarlow2x</tabstop>
+    <tabstop>RBbarlow3x</tabstop>
+    <tabstop>RBbarlow4x</tabstop>
+    <tabstop>PBok</tabstop>
+    <tabstop>PBcancel</tabstop>
+</tabstops>
+</UI>

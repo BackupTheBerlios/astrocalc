@@ -1,0 +1,93 @@
+
+<!doctype linuxdoc system>
+<article>
+<title>AstroCalc Dokumentation
+<author>Michael Cebak <tt>sternensaal@web.de</tt>
+<date>Version 0.3 , Son Jun 17 17:20:29 CEST 2001
+<abstract>
+Diese Dokumentation beschreibt AstroCalc Version 0.3
+</abstract>
+
+<toc>
+
+<sect>Einführung
+<p>
+AstroCalc ermöglicht die Berechnung diverser Teleskop-Spezifikationen,
+wie z.B. Auflösungsvermögen, Grenzgröße etc.
+Desweiteren stehen einige Tools (2 in der Version 0.3) für die
+Ermittlung des Julianischen Datums und zur Berechnung des Helligkeitsunterschiedes
+zweier Objekte (Sterne, Nebel etc.).
+
+<sect1>Änderungen
+<p>
+<itemize>
+<item>+ 2 Tools (Juliansches Datum, Mag-Differenz)
+<item>+ Änderung der GUI
+</itemize>
+
+<sect>Installation
+<p>
+<sect1>Wie erhält man AstroCalc
+<p>
+Die aktuellste Version kann immer bei SourceForge.net heruntergeladen
+werden: <htmlurl url="http://www.sourceforge.net/projects/sternensaal/">.
+
+<sect1>Anforderungen
+<p>
+<itemize>
+<item>automake, autoconf etc.
+<item>X11
+<item>QT2 (incl. der Header-Dateien)
+</itemize>
+
+<sect1>Kompilierung und Installation
+<p>
+
+Um AstroCalc zu kompilieren und zu installieren sind folgende Schritte
+im Hauptverzeichnis der AstroCalc Distribution notwendig:
+
+<tscreen><verb>
+% ./configure
+% make
+% make install
+</verb></tscreen>
+
+<p>
+Da AstroCalc <verb>autoconf</verb> nutzt, sollten während des
+Kompilierens keine Schwierigkeiten auftreten.
+
+Bei Problemen bitte eine möglichst genaue Fehlerbeschreibung an
+den Autor  <htmlurl url="mailto:sternensaal@web.de" name = "Michael Cebak">
+schicken.
+
+
+<p>
+<sect>Benutzung<p>
+<sect1>Generelles
+<p>
+<sect>Sonstiges
+<p>
+
+<sect>Fragen und Antworten<p>
+
+<sect>Copyright<p>
+
+AstroCalc Copyright 2001 Michael Cebak , sternensaal@web.de
+
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+<p>
+</article>
